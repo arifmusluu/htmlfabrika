@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlburger.com/sample/wordpress/676058cb by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Nov 2020 11:40:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sample Preview - htmlBurger &reg;</title>
+
+	<link rel="icon" type="image/png" href="../../assets/images/favicon/favicon-48x48.png" sizes="48x48" />
+	<link rel="icon" type="image/png" href="../../assets/images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="../../assets/images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" />
+
+	<!-- Vendor Styles -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+
+	<link rel="stylesheet" href="../../assets/vendor/animate.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="../../assets/vendor/OwlCarousel2-develop/dist/assets/owl.carousel.min.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="../../assets/vendor/OwlCarousel2-develop/dist/assets/owl.theme.default.min.css" type="text/css" media="all" />
+
+	<link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css" type="text/css" media="all" />
+
+	<!-- App Styles -->
+	<link rel="stylesheet" href="../../assets/css/style.8e5b11040bf5c90640644db40c6764d4.css" />
+</head>
+<body>
+<div class="wrapper">
+	<script type="text/javascript">
+		var $$sampleData = {"id":"676058cb","type":"wordpress","title":"Sofa Lab - WordPress Project","permalink":"\/sample\/wordpress\/676058cb\/","permalink_css":null,"permalink_html":null,"hosted_url":"http:\/\/samples.htmlburger.com\/wp\/67\/6058cb\/","thumbnail":"\/\/s3.amazonaws.com\/samples-thumbs\/uploads\/2017\/05\/sofa-thumb-768x504.jpg","pages":[],"description":"<p>We handled a project of 10+ pages, using HTML5 and CSS3. Besides making everything responsive, which today is the standard, we dazzled the project with some custom made JavaScript. Even more, the client enjoyed our custom animations.<\/p>\n<ul>\n<li>10+ pages<\/li>\n<li>HTML5 \/ CSS3<\/li>\n<li>Responsive<\/li>\n<li>Custom JavaScript<\/li>\n<li>Custom Animations<\/li>\n<\/ul>\n","subcategories":[],"categories":[{"slug":"wordpress","title":"WordPress","count":127},{"slug":"responsive","title":"Responsive","count":56}]}	</script>
+
+	<div id="app-sample" v-cloak>
+		<header class="header header--samples">
+			<a href="../../index.html" class="logo">
+				<aside>
+					<span></span>
+
+					<span></span>
+				</aside>
+
+				<strong>
+					<span>HTML</span>
+
+					Burger
+				</strong>
+			</a>
+
+			<aside class="header__samples-controls">
+				<div class="form-sample">
+					<form action="http://htmlburger.com/sample/wordpress/676058cb?" method="post">
+						<div class="form__group">
+							<a href="../../samples.html" class="form__label">
+								<i class="ico-arrow-left"></i>
+
+								Back
+							</a>
+						</div><!-- /.form__group -->
+
+						<div class="form__group form__title hidden-md">
+							<p>{{sample.title}}</p>
+						</div><!-- /.form__group -->
+
+						<div class="form__group" v-if="sample.pages.length > 1">
+							<label for="field-page" class="form__label  hidden-xs">Page:</label>
+
+							<div class="form__controls custom-select custom-select--primary">
+								<select class="select select--md" v-on:change="handlePageChange" v-model="page">
+									<option v-for="(page, index) in sample.pages" v-bind:value="index">{{page.index}}. {{page.nice_name}}</option>
+								</select>
+							</div><!-- /.form-controls -->
+						</div><!-- /.form__group -->
+
+						<div class="form__group hidden-xs" v-if="sample.permalink_css || sample.permalink_html">
+							<label for="field-page-sec" class="form__label">View:</label>
+
+							<div class="form__controls custom-select custom-select--primary">
+								<select class="select" v-on:change="handleViewChange" v-model="view">
+									<option value="page">Page</option>
+									<option value="html" v-if="sample.permalink_html">HTML</option>
+									<option value="css" v-if="sample.permalink_css">CSS</option>
+								</select>
+							</div><!-- /.form-controls -->
+						</div><!-- /.form__group -->
+					</form>
+				</div><!-- /.form-sample -->
+			</aside><!-- /.header__samples-controls -->
+		</header><!-- /.header -->
+
+		<div class="main">
+			<div v-bind:class="['sample-preview', { 'sample-preview_mobile': isMobile }]">
+				<div class="sample-preview__inner">
+					<div class="sample-preview__group">
+						<iframe v-bind:src="iframeSrc" width="100%" scrolling="auto" frameborder="0"></iframe>
+					</div><!-- /.sample-preview__group -->
+				</div><!-- /.sample-preview__inner -->
+			</div><!-- /.sample-preview -->
+		</div><!-- /.main -->
+	</div><!-- /#sample-app -->
+
+</div><!-- /.wrapper -->
+
+
+<!-- App JS -->
+<script src="../../assets/js/fonts.f392d5632cde1fa1db56.js" async defer></script>
+<script src="../../assets/js/bundle.37718b194e080838911a.js" async defer></script>
+
+	<script type="text/javascript">
+	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	    </script>
+	    <script type="text/javascript">
+	    try {
+	    var pageTracker = _gat._getTracker("UA-13301743-1");
+	    pageTracker._trackPageview();
+	    } catch(err) {}
+	</script>
+
+	<!-- Google Code for Remarketing Tag -->
+	<!--
+	Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+	-->
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 1039414911;
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+	</script>
+	<script type="text/javascript" src="../../../www.googleadservices.com/pagead/f.txt">
+	</script>
+	<noscript>
+	<div style="display:inline;">
+	<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1039414911/?value=0&amp;guid=ON&amp;script=0"/>
+	</div>
+	</noscript>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWPS3CP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- Start of LiveChat (www.livechatinc.com) code -->
+	<script type="text/javascript">
+	window.__lc = window.__lc || {};
+	window.__lc.license = 8819221;
+	(function() {
+	  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+	  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+	})();
+	</script>
+	<!-- End of LiveChat code -->
+</body>
+
+<!-- Mirrored from htmlburger.com/sample/wordpress/676058cb by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Nov 2020 11:40:41 GMT -->
+</html>
+
